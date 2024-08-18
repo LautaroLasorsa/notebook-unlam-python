@@ -7,6 +7,7 @@
 \usepackage{multicol}
 \setlength{\columnseprule}{0pt}
 \setlength{\columnsep}{0.2cm}
+\setcounter{tocdepth}{3}
 \usepackage{rotating}
 \usepackage{listings}
 \usepackage{xcolor}
@@ -79,7 +80,8 @@
 }
 
 \newcommand\codefile[2]{    
-    \textbf{#2}
+    %\textbf{#2}
+    \subsubsection{#2}
     \lstinputlisting{../#1}
     
 }
@@ -116,6 +118,40 @@ En esta sección irán los códigos básicos, vistos en la categoría Generales 
 \subsection{Heap y Heapsort}
 \codefile{basicos/heapsort.py}{heapsort.py}
 \codefile{basicos/max_heap.py}{max\_heap.py}
+
+\section{Grafos}
+\subsection{Leer grafos}
+\codefile{grafos/leer.py}{leer.py}
+
+\subsection{BFS: Busqueda en Anchura}
+\codefile{grafos/bfs.py}{bfs.py}
+
+\subsection{Bipartir un grafo}
+\codefile{grafos/bipartir.py}{bipartir.py}
+\codefile{grafos/bipartir_2.py}{bipartir\_2.py}
+
+\subsection{Camino Mínimo}
+\codefile{grafos/dijkstra.py}{dijkstra.py}
+\codefile{grafos/floyd_warshall.py}{floyd\_warshall.py}
+\codefile{grafos/bellman_ford.py}{bellman\_ford.py}
+\codefile{grafos/spfa.py}{spfa.py}
+
+\subsection{Union Find}
+\codefile{grafos/union_find_small_to_large.py}{Small To Large}
+\codefile{grafos/union_find_optimo.py}{Path Compression y Union by Size}
+
+\subsection{MST: Árbol Generador Mínimo}
+\codefile{grafos/kruskal.py}{kruskal.py}
+\codefile{grafos/prim.py}{prim.py}
+
+\subsection{Componentes Fuertemente Conexas}
+\codefile{grafos/kosaraju_iterativo.py}{kosaraju\_iterativo.py}
+\codefile{grafos/tarjan_iterativo.py}{tarjan\_iterativo.py}
+\codefile{grafos/grafo_condensado.py}{grafo\_condensado.py}
+\codefile{grafos/2_SAT.py}{2\_SAT.py}
+
+\subsection{Components Biconexas, Puentes y Puntos de Articulación}
+\codefile{grafos/Componentes\_biconexas.py}{componentes\_biconexas.py}
 
 \section{Estructuras de Datos}
 
