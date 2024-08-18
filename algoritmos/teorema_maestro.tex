@@ -1,0 +1,16 @@
+Para analizar la complejidad de los algoritmos de \\ Divide y Vencerás (D\&C), existen tres técnicas que \\ nos pueden ser sumamente útiles:
+
+\begin{itemize}
+    \item \textbf{Dividir la recursión en capas}: Por ejemplo, en el \\ primer problema podemos observar que en cada capa \\ de la recursión hay una complejidad $O(n)$ y que \\ existen $\log(n)$ capas, porque en cada una, cada \\ subproblema tiene la mitad del tamaño \\ que en la capa anterior.
+    
+    \item \textbf{Teorema Maestro}: Si en cada paso un problema de tamaño \\ $n$ se divide en $a$ subproblemas de tamaño \\ $n/b$ y existe un cómputo adicional \\ $O(f(n))$, entonces:
+    \begin{itemize}
+        \item Si $f(n) \in O(n^c)$ con $c < \log_b(a)$, entonces \\ $T(n) \in \Theta(n^{\log_b(a)})$. \\ Ejemplo: $T(n) = 8 \times T(n/2) + n^2$, entonces $T(n) \in O(n^3)$.
+        
+        \item Si $f(n) \in \Theta(n^{\log_b(a)})$, entonces \\ $T(n) \in \Theta(n^{\log_b(a)} \times \log n)$. \\ Ejemplo: $T(n) = 2 \times T(n/2) + n$ (caso de MergeSort), entonces \\ $T(n) \in \Theta(n \times \log n)$.
+        
+        \item Si $f(n) \in \Omega(n^c)$ con $c > \log_b(a)$ y existe \\ $k < 1$ tal que para $n$ suficientemente grande,\\ $a \times f(n/b) \leq k \times f(n)$, \\ entonces $T(n) \in \Theta(f(n))$. Ejemplo: \\ $T(n) = 2 \times T(n/2) + n^2$, entonces \\ $T(n) \in \Theta(n^2)$.
+    \end{itemize}
+    
+    \item \textbf{Análisis amortizado}: Como en otros algoritmos, \\ puede haber factores que limiten la cantidad \\ de estados de manera ad-hoc. En el segundo problema \\ de ejemplo, se observa que cada estado elimina un elemento, y cada elemento es eliminado por un único estado. Por lo tanto, hay como máximo $n$ estados distintos.
+\end{itemize}
