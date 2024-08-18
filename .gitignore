@@ -1,1 +1,10 @@
-*.ini
+*
+!*/
+
+!.gitignore
+!*.cpp
+!*.py
+!*.sh
+!*.txt
+!*.tex
+!notebook/imagenes/

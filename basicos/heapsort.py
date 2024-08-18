@@ -1,4 +1,6 @@
-# heap: Estructura de datos que permite mantener un conjunto de elementos ordenados y permite insertar y extraer el mínimo en O(log n)
+# heap: Estructura de datos que permite mantener un conjunto de 
+# elementos ordenados y permite insertar y extraer el mínimo 
+# en O(log n)
 # heappush(h, x): Inserta x en el heap h
 # heappop(h): Extrae el mínimo del heap h
 # h[0] es el mínimo del heap h

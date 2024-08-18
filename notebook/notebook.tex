@@ -52,7 +52,7 @@
 \setlength{\headsep}{0.3cm}
 \setlength{\parindent}{0in}
 
-\newcommand{\team}{\quad University: \textbf{Universidad Nacional de La Matanza, DIIT} \quad\quad Team: \textbf{}
+\newcommand{\team}{\quad University: \textbf{Universidad Nacional de La Matanza, DIIT} \quad\quad Team: \input{../equipo.txt}\textbf{}
     \textbf{\quad\quad\quad\quad\quad(UNLaM)}
 }
 
@@ -78,7 +78,11 @@
     breaklines
 }
 
-\newcommand\codefile[1]{\lstinputlisting{../#1}}
+\newcommand\codefile[2]{    
+    \textbf{#2}
+    \lstinputlisting{../#1}
+    
+}
 
 \begin{document}
 \begin{multicols*}{2}
@@ -89,29 +93,29 @@
 
 \subsection{Comando de Ejecución}
 
-\codefile{other/build.sh}
+\codefile{utilitarios/run.sh}{run.sh}
 
-\section{Básico}
+\section{Basico}
 En esta sección irán los códigos básicos, vistos en la categoría Generales del árbol de correlatividades.
 
 \subsection{Busqueda Binaria}
-\codefile{basicos/lower_bound.py}
-\codefile{basicos/upper_bound.py}
+\codefile{basicos/lower_bound.py}{lower\_bound.py}
+\codefile{basicos/upper_bound.py}{upper\_bound.py}
 
 \subsection{Tabla Aditiva}
-\codefile{basicos/tabla_aditiva.py}
-\codefile{basicos/tabla_aditiva_2D.py}
+\codefile{basicos/tabla_aditiva.py}{tabla\_aditiva.py}
+\codefile{basicos/tabla_aditiva_2D.py}{tabla\_aditiva\_2D.py}
 
 \subsection{Programación Dinámica}
-\codefile{basicos/sub_set_sum.py}
-\codefile{basicos/cambio_monedas.py}
+\codefile{basicos/sub_set_sum.py}{sub\_set\_sum.py}
+\codefile{basicos/cambio_monedas.py}{cambio\_monedas.py}
 
-\subsection {Recurrencias Lineales}
-\codefile{basicos/recurrenci_lineal.py}
+\subsection{Recurrencias Lineales}
+\codefile{basicos/recurrencia_lineal.py}{recurrena\_lineal.py}
 
 \subsection{Heap y Heapsort}
-\codefile{basicos/heapsort.py}
-\codefile{basicos/max_heap.py}
+\codefile{basicos/heapsort.py}{heapsort.py}
+\codefile{basicos/max_heap.py}{max\_heap.py}
 
 \section{Estructuras de Datos}
 

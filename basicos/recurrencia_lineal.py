@@ -13,7 +13,8 @@ def recurrencia(A, C, n, mod = int(1e9+7)): # O(n * k)
         A[i] = sum(C[j] * A[i - j] for j in range(k)) % mod
     return A[n]
 
-# No lo vimos en clase, pero existe una solución más eficiente en O(k^2 * log(n)) usando exponenciación binaria de polinomios.
+# No lo vimos en clase, pero existe una solución más eficiente en 
+# O(k^2 * log(n)) usando exponenciación binaria de polinomios.
 def recurrencia(A, C, n, mod = int(1e9+7)): # O(k^2 * log(n))
     k = len(C)
     if n < k:
