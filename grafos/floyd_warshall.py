@@ -2,7 +2,6 @@
 # Soporta pesos negativos
 # Retorna una matriz de distancias
 # O(N^3)
-
 def FloydWarshall(G : list[list[tuple[int,int]]]):
   distancias = [[float('inf')] * len(G) for _ in range(len(G))]
   for u in range(len(G)):

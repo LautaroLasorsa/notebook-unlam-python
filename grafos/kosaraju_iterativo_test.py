@@ -1,6 +1,4 @@
 # https://cses.fi/problemset/task/1683
-import sys
-sys.setrecursionlimit(10**6)
 def Kosaraju(g) :
     n = len(g)
     ord = []
