@@ -1,0 +1,47 @@
+% Explicación inicial
+Pensemos que cada número natural (excluido % línea 1
+el 0) es un vector infinito de posiciones % línea 2
+naturales (incluido el 0). En este caso, % línea 3
+$V(N)[i]$ indica el exponente del $i$-ésimo % línea 4
+primo en la factorización del número $N$. % línea 5
+Llamemos $V(N)$ a la representación % línea 6
+vectorial de $N$. % línea 7
+
+% Multiplicación de vectores
+Hacer $A \times B$ como números es % línea 8
+sumar sus respectivos vectores. Es decir, % línea 9
+$V(A \times B) = V(A) + V(B)$. % línea 10
+
+% División de vectores
+Análogamente, se tiene que % línea 11
+$V\left(\frac{A}{B}\right) = V(A) - V(B)$. % línea 12
+
+% Relación de divisibilidad
+Lo interesante es notar que si un número % línea 13
+divide a otro, entonces tiene un exponente % línea 14
+menor o igual en cada factor primo. Es % línea 15
+decir, % línea 16
+
+$$A \mid B \iff V(A) \leq V(B)$$ % línea 17
+
+(tomando $\leq$ posición a posición). % línea 18
+
+% Máximo común divisor (GCD)
+También se puede ver que: % línea 19
+
+$$V(\text{GCD}(A,B)) = \min(V(A), V(B))$$ % línea 20
+
+donde el mínimo se toma posición a % línea 21
+posición, y % línea 22
+
+% Mínimo común múltiplo (LCM)
+$$V(\text{LCM}(A,B)) = \max(V(A), V(B))$$ % línea 23
+
+donde el máximo se toma posición a % línea 24
+posición. % línea 25
+
+% Conclusión
+Esto nos permite ver por qué GCD % línea 26
+(Máximo Común Divisor) y LCM (Mínimo % línea 27
+Común Múltiplo) tienen propiedades % línea 28
+análogas a las de mínimo y máximo. % línea 29
