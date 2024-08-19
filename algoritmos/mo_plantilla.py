@@ -6,7 +6,8 @@
 # - La función EliminarElemento debe ser implementada
 # - La variable neutro debe ser definida
 # CUIDADO: Si la operación no es conmutativa, deben implementar
-# versiones por izquierda y derecha de AgregarElemento y EliminarElemento
+# versiones por izquierda y derecha de 
+# AgregarElemento y EliminarElemento
 # para evitar errores
 # Complejidad: O((N+Q) * sqrt(N) * O(Agregar/Eliminar Elemento))
 # En Python es probable que de TLE, en C++ no debería
