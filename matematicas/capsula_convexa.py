@@ -27,6 +27,8 @@ def CapsulaConvexa(puntos):
         return puntos
     puntos.sort()
     cap = []
+    # En la comparativa poner >0 para incluir puntos alineados
+    # Poner >=0 para excluir puntos alineados
     for p in puntos:
         while len(cap)>1 and angulo(cap[-2],cap[-1],p)>0:
             cap.pop()
