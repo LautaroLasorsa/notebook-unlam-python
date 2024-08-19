@@ -1,4 +1,6 @@
 # Calcula base^e modulo mod en O(log(e))
+# Para numeros enteros se puede reemplazar
+# por la ya implementada math.pow(base,e,mod)
 
 def Potencia(base, e, mod):
     res = 1 # Elemento neutro de la multiplicación
