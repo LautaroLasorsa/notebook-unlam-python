@@ -50,7 +50,10 @@ def convolve_ntt(a, b, p, g):
 # Ejemplo de uso
 # a = [1, 2, 3]
 # b = [4, 5, 6]
-# p = 998244353  # Un número primo
+
+# p = 998244353  # Un número primo famoso
 # g = 3          # Una raíz primitiva módulo 998244353
+
+
 
 #result = convolve_ntt(a, b, p, g)
